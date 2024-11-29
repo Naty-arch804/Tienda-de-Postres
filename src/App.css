@@ -1,7 +1,21 @@
 .App {
   text-align: center;
 }
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.content {
+  flex: 1;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +49,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.carousel-item img {
+  height: 100vh; /* Ajusta la altura al 100% del viewport */
+  width: 100%;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
